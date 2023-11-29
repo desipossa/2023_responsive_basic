@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid tomato;
+    outline: 1px solid tomato--;
 }
 
 #Header {
@@ -49,9 +49,157 @@
 .main_visual {}
 
 .main_visual .itm {
-    height: 600px;
+    position: relative;
+    height: 700px;
 }
 
 .main_visual .itm01 {
     background: url(../images/mainVisual01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .itm02 {
+    background: url(../images/mainVisual02.jpg) no-repeat center center/cover;
+}
+
+.main_visual .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.main_visual .content p {
+    margin: 0 0 32px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 58px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main_visual .content span {
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main_visual .slick-dots {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    margin: 0 0 0 -585px;
+}
+
+.main_visual .slick-dots>li {
+    display: inline-block;
+    margin: 0 4px 0 0;
+}
+
+.main_visual .slick-dots>li button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    background: #008850;
+    color: #fff;
+    font-size: 10px;
+    border-radius: 8px;
+}
+
+.main_content {}
+
+.main_content .title h2 {
+    text-align: center;
+}
+
+.main_content .title p {
+    text-align: center;
+}
+
+.main_content .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.main_content .inner>* {
+    flex: 1;
+}
+
+.main_content .itm figure {
+    margin: 0 0 24px 0;
+}
+
+.main_content .itm .tit {
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 0 16px 0;
+    text-align: center;
+}
+
+.main_content .itm .desc {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.main_content .itm .lnk {
+    text-align: center;
+}
+
+.main_banner {
+    background: url(../images/mainVisual02.jpg) no-repeat center center/cover;
+}
+
+.main_banner .title h2 {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main_banner .title p {
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.main_portfolio .main_portfolio_slide .itm {
+    padding: 0 15px;
+}
+
+.main_portfolio .main_portfolio_slide .itm figure {
+    margin: 0 0 16px 0;
+}
+
+.main_portfolio .main_portfolio_slide .itm .desc {
+    text-align: center;
+}
+
+.main_portfolio .main_portfolio_slide {
+    margin: 0 -15px;
+}
+
+.main_portfolio .main_portfolio_slide .slick-dots {
+    text-align: center;
+    margin: 40px 0 0 0;
+}
+
+.main_portfolio .main_portfolio_slide .slick-dots>li {
+    display: inline-block;
+    margin: 0 4px;
+}
+
+.main_portfolio .main_portfolio_slide .slick-dots>li button {
+    width: 20px;
+    height: 20px;
+    background: #ddd;
+    color: #fff;
+    font-size: 10px;
+    border-radius: 50%;
+    border: none;
+}
+
+.main_portfolio .main_portfolio_slide .slick-dots>li.slick-active button {
+    background: #008850;
 }
