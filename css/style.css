@@ -1,0 +1,57 @@
+* {
+    outline: 1px solid tomato;
+}
+
+#Header {
+    line-height: 80px;
+}
+
+#Header h1 {
+    font-size: 0;
+}
+
+#Header .header_inner {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#gnb {
+    margin: 0 0 0 auto;
+}
+
+#gnb>ul {
+    display: flex;
+    gap: 60px;
+}
+
+#gnb>ul>li {
+    position: relative;
+}
+
+#gnb>ul>li~li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    transform: translate(0, -50%);
+}
+
+#gnb>ul>li>a {
+    display: block;
+    font-size: 18px;
+}
+
+.main_visual {}
+
+.main_visual .itm {
+    height: 600px;
+}
+
+.main_visual .itm01 {
+    background: url(../images/mainVisual01.jpg) no-repeat center center/cover;
+}
