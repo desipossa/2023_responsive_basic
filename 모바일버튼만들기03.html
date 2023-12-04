@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/hamburgers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <style>
         #header {
             line-height: 90px;
@@ -88,6 +89,14 @@
 
                 line-height: 1;
             }
+
+            .mopen .hamburger {
+                padding: 0 0;
+            }
+
+            .mopen .hamburger .hamburger-inner {
+                background: tomato;
+            }
         }
     </style>
 </head>
@@ -96,7 +105,8 @@
     <div class="wrap">
         <header id="header">
             <div class="inner">
-                <h1>
+                <!-- https://animate.style/ -->
+                <h1 class="animate__animated animate__flip animate__infinite">
                     <a href="/">
                         <img src="./images/logo02.png" alt="">
                     </a>
@@ -111,7 +121,7 @@
                     </ul>
                 </nav>
                 <div class="mopen">
-                    <button class="hamburger" type="button">
+                    <button class="hamburger hamburger--elastic" type="button">
                         <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
                         </span>
@@ -131,7 +141,7 @@
         $(function () {
             $('.mopen').on('click', function () {
                 $('.gnb').toggleClass('on');
-                $(this).toggleClass('on');
+                $(this).find('.hamburger').toggleClass('is-active');
             })
         })
     </script>
