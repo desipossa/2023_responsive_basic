@@ -45,5 +45,12 @@ $(function () {
 
     $('.to_top').on('click', function () {
         $('html, body').animate({ scrollTop: 0 }, 400);
+    });
+
+
+    // responsive menu
+    $('.mopen').on('click', function () {
+        $('#gnb').toggleClass('on');
+        $(this).toggleClass('on');
     })
 })
